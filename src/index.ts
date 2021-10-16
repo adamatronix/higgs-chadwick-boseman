@@ -1,6 +1,6 @@
 
-import Example from "./Example/Example"; 
+import BosemanWall from "./BosemanWall/BosemanWall"; 
 
 export {
-  Example
+  BosemanWall
 }
