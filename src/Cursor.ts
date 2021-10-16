@@ -1,11 +1,13 @@
 import * as P5 from 'p5';
 
-class BosemanWall {
+class Cursor {
 
   container:HTMLDivElement;
+  radius:number;
 
   constructor(container: HTMLDivElement) {
     this.container = container;
+    this.radius = 75;
     new P5(this.sketch);
   }
 
@@ -19,8 +21,16 @@ class BosemanWall {
       canvas.style('z-index', 1);
       p5.frameRate(60);
     }
-  }
 
+    p5.mouseWheel = (event:any) => {
+      this.radius += event.delta;
+    }
+
+    p5.draw = () => {
+      p5.clear();
+      p5.circle(p5.mouseX, p5.mouseY, this.radius); 
+    }
+  }
 }
 
-export default BosemanWall;
+export default Cursor;
