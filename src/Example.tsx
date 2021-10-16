@@ -7,7 +7,7 @@ const Example = () => {
   const containerEl = useRef();
 
   useEffect(() => {
-    let demo = new BosemanWall();
+    let demo = new BosemanWall(containerEl.current);
 
   }, []);
 
