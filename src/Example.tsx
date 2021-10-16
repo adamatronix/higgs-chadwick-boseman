@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import { render } from 'react-dom';
-import BosemanWall from './BosemanWall/BosemanWall';
+import BosemanWall from './BosemanWall';
 
 const Example = () => {
 

@@ -1,5 +1,5 @@
 
-import BosemanWall from "./BosemanWall/BosemanWall"; 
+import BosemanWall from "./BosemanWall"; 
 
 export {
   BosemanWall
