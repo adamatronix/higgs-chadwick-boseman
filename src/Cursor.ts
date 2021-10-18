@@ -24,6 +24,8 @@ class Cursor {
 
     p5.mouseWheel = (event:any) => {
       this.radius += event.delta;
+      if(this.radius < 10) 
+        this.radius = 20;
     }
 
     p5.draw = () => {
